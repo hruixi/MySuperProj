@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="少女系">#FAA3BA</color>
+    <color name="Rui_gay">#9F79EE</color>
+    <color name="Rui_black">#000000</color>
+    <color name="Rui_风吹麦浪">#FFEC8B</color>
+    <color name="Rui_shadowGray">#D1D1D1</color>
+
+    <color name="Rui_white">#FFFFFF</color>
+    <color name="Rui_login_text">#316BC1</color>
+    <color name="Rui__bg">#022D5A</color>
+    <color name="Rui_therapy_widgetLine">#59E8D1</color>
+    <!--<color name="JColor_therapy_innerBg">#178A78</color>-->
+    <color name="Rui_therapy_innerBg">#001F3D</color>
+    <color name="Rui_therapy_btnText">#26DAC0</color>
+    <color name="Rui_therapy_btnBg_new">#02A58D</color>
+    <color name="Rui_therapy_btnBg_old">#16acb6</color>
+    <color name="Rui_therapy_btnBg">#034d96</color>
+    <color name="Rui_therapy_btnBg2">#0C9E87</color>
+    <!--<color name="JColor_therapy_edgeText">#2CC5A3</color>-->
+    <color name="Rui_therapy_edgeText">#0389E2</color>
+    <color name="Rui_fragment_tab_edit">#D3D3D3</color>
+    <color name="Rui_custom_spinner_bg">#053F79</color>
+    <color name="Rui_custom_spinner_divider">#504e59</color>
+    <color name="Rui_red">#CE0000</color>
+    <color name="Rui_green">#00BB00</color>
+    <color name="Rui_orange">#FF8000</color>
+</resources>

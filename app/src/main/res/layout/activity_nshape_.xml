@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".activity.NShape_Activity">
+
+    <Button
+        android:id="@+id/sanjiaoxing"
+        android:text="苦无"
+        android:background="@drawable/bilibili_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/liubianxing"
+        android:text="手里剑"
+        android:layout_toRightOf="@id/sanjiaoxing"
+        android:background="@drawable/bilibili_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/jiubianxing"
+        android:text="千人斩"
+        android:layout_toRightOf="@id/liubianxing"
+        android:background="@drawable/bilibili_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/rotation"
+        android:text="狗带"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nshape_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bilibili_button" />
+
+    <rui.com.crashlog.widget.customVIew.NShapeView
+        android:id="@+id/nshape_view"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1px" />
+
+
+
+
+</RelativeLayout>

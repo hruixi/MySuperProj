@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--設置成半透明-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="colorPrimary">@color/Rui_gay</item>-->
+        <item name="colorPrimaryDark">@color/Rui_gay</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AndroidStyler_tv">
+        <item name="android:textSize">@dimen/dialog_txt_size</item>
+    </style>
+
+</resources>

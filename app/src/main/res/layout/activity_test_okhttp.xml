@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestOkhttp">
+
+    <ScrollView
+        android:id="@+id/container_sl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/container_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/container_ll"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.baidu.com"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="80dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_link_img"
+            android:layout_below="@id/tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1527752500107&amp;di=6933dd0f73bec052ba96541add4453dc&amp;imgtype=0&amp;src=http%3A%2F%2Fa3.att.hudong.com%2F74%2F38%2F01300543482633144357387083741.jpg"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_link_img2"
+            android:layout_below="@id/tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=99058468,2796881463&amp;fm=27&amp;gp=0.jpg"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_link_img3"
+            android:layout_below="@id/tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=515986614,143155715&amp;fm=27&amp;gp=0.jpg"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_webView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.jianshu.com/p/269c3f70ec1e"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="80dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

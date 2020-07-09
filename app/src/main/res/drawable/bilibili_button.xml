@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--阴影部分-->
+    <!--<item-->
+    <!--android:left="5dp"-->
+    <!--android:top="6dp">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<corners android:radius="20dp" />-->
+            <!--<solid android:color="@color/Rui_shadowGray"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item android:drawable="@drawable/navkuang" />-->
+    <item
+        android:right="1dp"
+        android:bottom="1px">
+        <ripple android:color="@android:color/white">
+            <item
+                android:bottom="5px"
+                android:left="5px"
+                android:right="5px"
+                android:top="5px">
+                <shape android:shape="rectangle">
+                    <corners android:radius="20dp" />
+                    <solid android:color="@color/少女系"/>
+                    <gradient
+                        android:startColor="@color/少女系"
+                        android:endColor="@color/Rui_gay"
+                        android:centerColor="@color/Rui_风吹麦浪"
+                        android:angle="45" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

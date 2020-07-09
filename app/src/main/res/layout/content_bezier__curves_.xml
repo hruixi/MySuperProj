@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Bezier_Curves_Activity"
+    tools:showIn="@layout/app_bar_bezier__curves_">
+
+    <rui.com.crashlog.widget.No_Scrollable_ViewPager
+        android:id="@+id/fragments_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </rui.com.crashlog.widget.No_Scrollable_ViewPager>
+
+</android.support.constraint.ConstraintLayout>

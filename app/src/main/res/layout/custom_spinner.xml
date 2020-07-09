@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/itemSelect_name0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="请选择"
+        android:textStyle="bold"
+        android:textColor="@color/Rui_white"
+        android:background="@drawable/customspinner_common_bg"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/showTime"
+        android:layout_width="45dp"
+        android:layout_weight="0"
+        android:layout_marginStart="-3px"
+        android:layout_height="match_parent"
+        android:background="@drawable/customspinner_common_bg"
+        android:scaleType="centerInside"
+        android:src="@mipmap/spinner_image"
+        />
+
+</LinearLayout>
