@@ -4,3 +4,4 @@
 贝塞尔曲线的使用
 okhttp的使用
 集成bugly
+集成LeakCanary
