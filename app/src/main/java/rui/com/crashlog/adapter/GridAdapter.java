@@ -3,7 +3,6 @@ package rui.com.crashlog.adapter;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.provider.ContactsContract;
-import android.support.v7.widget.AppCompatImageView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;

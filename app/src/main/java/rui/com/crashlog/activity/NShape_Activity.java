@@ -3,11 +3,11 @@ package rui.com.crashlog.activity;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 
 import rui.com.crashlog.R;
 import rui.com.crashlog.widget.customVIew.NShapeView;

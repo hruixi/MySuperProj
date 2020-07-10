@@ -1,10 +1,11 @@
 package rui.com.crashlog.activity;
 
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import rui.com.crashlog.R;
 

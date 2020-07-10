@@ -1,8 +1,10 @@
 package rui.com.crashlog.activity;
 
 import android.hardware.camera2.CameraManager;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import rui.com.crashlog.Application.MyApplication;
 import rui.com.crashlog.R;

@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.android.tools.build:gradle:4.0.0'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -36,10 +36,11 @@ ext {
     // 构建工具版本号
     compileSdkVersion               = 28
     buildToolsVersion               = '28.0.3'
-    supportLibraryVersion           = '28.0.0'
 
     // 依赖包的版本号
     androidSupportSdkVersion        = '28.0.0'
+    supportLibraryVersion           = '28.0.0'
+
     retrofitSdkVersion              = '2.6.2'
     glideSdkVersion                 = '4.10.0'
     butterknifeSdkVersion           = '10.2.0'

@@ -6,10 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,6 +17,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,8 +35,7 @@ import rui.com.crashlog.bugly.BuglyTestActivity;
 import rui.com.crashlog.widget.customVIew.Indicator;
 import rui.com.crashlog.widget.customVIew.CustomProgressDialog;
 
-public class MainActivity extends AppCompatActivity implements  ViewPager.OnPageChangeListener, IPagerPosition
-{
+public class MainActivity extends AppCompatActivity implements  ViewPager.OnPageChangeListener, IPagerPosition {
     private final String TAG = getClass().getSimpleName();
 
     private ViewPager viewPager = null;
@@ -287,8 +287,7 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
     }
 
     @Override
-    public void onDestroy()
-    {
+    public void onDestroy() {
         super.onDestroy();
         AudioService.getInstance().destroyAudioRecord();
 

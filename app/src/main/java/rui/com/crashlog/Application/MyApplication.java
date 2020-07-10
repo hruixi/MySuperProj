@@ -40,7 +40,7 @@ public class MyApplication extends Application {
         CrashReport.initCrashReport(context, strategy);
 
         // 普通的初始化bugly
-        CrashReport.initCrashReport(getApplicationContext());
+//        CrashReport.initCrashReport(getApplicationContext());
     }
 
     public static RefWatcher getRefWatcher(Context context) {

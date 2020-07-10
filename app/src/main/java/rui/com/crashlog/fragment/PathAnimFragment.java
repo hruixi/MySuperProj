@@ -1,14 +1,15 @@
 package rui.com.crashlog.fragment;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
 import rui.com.crashlog.R;
 
-public class PathAnimFragment extends android.support.v4.app.Fragment
+public class PathAnimFragment extends Fragment
 {
     private View contentView = null;
 
