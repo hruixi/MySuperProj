@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="rui.com.crashlog">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -11,13 +10,15 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <!-- 应用程序能够使用OpenGL ES 2.0的API -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 应用程序能够使用OpenGL ES 2.0的API -->
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true" />
-    <!-- 应用程序需要使用纹理压缩，需要声明应用程序需要支持哪种压缩格式，以便他们安装在兼容的设备上 -->
+        android:required="true" /> <!-- 应用程序需要使用纹理压缩，需要声明应用程序需要支持哪种压缩格式，以便他们安装在兼容的设备上 -->
     <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
     <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
 
@@ -29,6 +30,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".bugly.BuglyTestActivity"></activity>
         <activity
             android:name=".activity.MainActivity"
             android:launchMode="standard">
@@ -49,15 +51,22 @@
         <activity android:name=".activity.TcpSocket_Activity" />
         <activity android:name=".activity.TestConstraintLayoutActivity" />
         <activity android:name=".activity.VideoViewActivity" />
-        <activity
-            android:name=".activity.TestCamera2Activity"
-            >
-        </activity>
-        <activity android:name=".activity.MediaRecorderTest"></activity>
+        <activity android:name=".activity.TestCamera2Activity"></activity>
+        <activity android:name=".activity.MediaRecorderTest" /> <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="9e6faeb371" /> <!-- 配置APP版本号 -->
+        <!-- <meta-data -->
+        <!-- android:name="BUGLY_APP_VERSION" -->
+        <!-- android:value="<APP_Version>" /> -->
+        <!-- 配置APP渠道号 -->
+        <!-- <meta-data -->
+        <!-- android:name="BUGLY_APP_CHANNEL" -->
+        <!-- android:value="<APP_Channel>" /> -->
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
     </application>
 
-    <!-- 设置软键盘不遮挡界面上的输入框
-     android:windowSoftInputMode="stateAlwaysHidden|adjustPan"  -->
-    <!-- 设置屏幕尺寸改动时，不会出现调用onCreate()
-     android:configChanges="screenSize|fontScale|orientation"  -->
 </manifest>

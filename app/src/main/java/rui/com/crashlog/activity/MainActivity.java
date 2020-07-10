@@ -30,6 +30,7 @@ import rui.com.crashlog.R;
 import rui.com.crashlog.adapter.ButtonPagerAdapter;
 import rui.com.crashlog.adapter.IPagerPosition;
 import rui.com.crashlog.adapter.ViewPagerAdapter;
+import rui.com.crashlog.bugly.BuglyTestActivity;
 import rui.com.crashlog.widget.customVIew.Indicator;
 import rui.com.crashlog.widget.customVIew.CustomProgressDialog;
 
@@ -53,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
 
     private List<Button> mButtons = new ArrayList<>();
     private int mButtons_size;
+
+    public static final int EXIT_WAIT_TIME = 2000;
+    private long mExitStartTime = 0;
 
     public enum  bool
     {
@@ -98,6 +102,16 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
                     Manifest.permission.RECORD_AUDIO,
                     Manifest.permission.CAMERA,
             });
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (System.currentTimeMillis() - mExitStartTime > EXIT_WAIT_TIME) {
+            mExitStartTime = System.currentTimeMillis();
+            Toast.makeText(this, "再按一次退出该应用", Toast.LENGTH_SHORT).show();
+        } else {
+            super.onBackPressed();
         }
     }
 
@@ -161,10 +175,9 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
 
     public void initData()
     {
-//        Log.e("herx___"+TAG, "===============================> isItemPressed.size()=" +isItemPressed.size());
         mButtons.clear();
 
-/** 从xml文件中添加按钮，可以使代码更简洁 **/
+        /** 从xml文件中添加按钮，可以使代码更简洁 **/
         LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.my_buttons, null);
 
         Button nShape_button = linearLayout.findViewById(R.id.nShape_dadada);
@@ -199,6 +212,10 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
         Camera2_dadada.setOnClickListener(buttons_onClickListener);
         mButtons.add(Camera2_dadada);
 
+        Button bugly_dadada = linearLayout.findViewById(R.id.buglyTest_dadada);
+        bugly_dadada.setOnClickListener(buttons_onClickListener);
+        mButtons.add(bugly_dadada);
+
         linearLayout.removeAllViews();
         mButtons_size = mButtons.size();
 
@@ -220,8 +237,7 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
         @Override
         public void onClick(View v) {
             Class<?> targetClass = null;
-            switch (v.getId())
-            {
+            switch (v.getId()) {
                 case R.id.nShape_dadada:
 //                    Intent intent = new Intent(MainActivity.this, NShape_Activity.class);
                     targetClass = NShape_Activity.class;
@@ -248,9 +264,11 @@ public class MainActivity extends AppCompatActivity implements  ViewPager.OnPage
                 case R.id.Camera2_dadada:
                     targetClass = TestCamera2Activity.class;
                     break;
+                case R.id.buglyTest_dadada:
+                    targetClass = BuglyTestActivity.class;
+                    break;
             }
-            if (targetClass != null)
-            {
+            if (targetClass != null) {
                 Intent intent = new Intent(MainActivity.this, targetClass);
                 startActivity(intent);
             }

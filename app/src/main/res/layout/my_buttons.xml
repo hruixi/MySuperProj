@@ -68,4 +68,13 @@
         android:layout_gravity="center"
         android:background="@drawable/bilibili_button"/>
 
+    <Button
+        android:id="@+id/buglyTest_dadada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="buglyTest"
+        android:layout_gravity="center"
+        android:background="@drawable/bilibili_button"/>
+
 </LinearLayout>

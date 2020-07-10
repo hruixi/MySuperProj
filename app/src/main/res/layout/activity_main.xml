@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,9 +10,8 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp">
+        android:layout_height="00dp"
+        android:layout_weight="1">
     </android.support.v4.view.ViewPager>
 
     <!--<GridView-->
@@ -28,26 +28,25 @@
 
     <rui.com.crashlog.widget.customVIew.Indicator
         android:id="@+id/splashIndicator"
-        android:layout_width="50dp"
+        android:layout_width="100dp"
         android:layout_height="6dp"
-        android:layout_below="@+id/viewpager"
-        android:layout_centerHorizontal="true">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal">
     </rui.com.crashlog.widget.customVIew.Indicator>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="0dp">
+        android:background="@color/Rui_gay">
 
-        <TextView
-            android:id="@+id/swagText"
-            android:layout_width="match_parent"
-            android:layout_height="186px"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:background="@drawable/bilibili" />
+<!--        <TextView-->
+<!--            android:id="@+id/swagText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="186px"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/bilibili" />-->
         <android.support.v4.view.ViewPager
             android:id="@+id/buttons_viewPager"
             android:layout_width="350px"
@@ -71,4 +70,4 @@
             android:background="@drawable/bai_go"/>
     </FrameLayout>
 
-</RelativeLayout>
+</LinearLayout>
